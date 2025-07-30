@@ -1,8 +1,12 @@
 @import "tailwindcss";
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap');
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #171717;
+  --foreground: #ffffff;
+  --border: rgb(50,50,40)
 }
 
 @theme inline {
@@ -13,14 +17,30 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root { 
+    --background: #0E100F;
+    --foreground: #FFFFE3;
+    --border: #323228;
+    --hover: #18AAFF;
+
+    --cyan: #00D3F2;
+    --purple: #C27AFF;
+    --pink: #FB64B6;
+    --yellow: #FCC800;
+
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
 }
+.nav-anim-hover {
+  transition: color 0.3s;
+}
+.nav-anim-hover:hover,
+.nav-anim-hover:focus {
+  color: #18aaff !important;
+}
+

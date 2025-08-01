@@ -4,8 +4,8 @@ import { FaAddressCard, FaHome, FaBriefcase, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
     return(
-        <nav className="p-4">
-            <div className="flex items-center text-[var(--foreground)] text-l w-full">
+        <nav className="">
+            <div className="flex items-center text-[var(--foreground)] text-l w-full p-2">
                 <div className="flex items-center">
                     <Link
                         href="/"
@@ -41,7 +41,7 @@ const Navbar = () => {
                     </Link>
                 </div>
             </div>
-            <hr className="mt-4 border-b border-[var(--border)] w-full absolute left-0" />
+            <hr className="border-b border-[var(--border)] w-full absolute left-0" />
         </nav>
     )
 }

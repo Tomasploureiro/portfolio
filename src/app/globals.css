@@ -22,7 +22,7 @@
     --foreground: #FFFFE3;
     --border: #323228;
     --hover: #18AAFF;
-
+    --bgcard: #191917;
     --cyan: #00D3F2;
     --purple: #C27AFF;
     --pink: #FB64B6;
@@ -35,6 +35,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Hanken Grotesk', sans-serif;
+  overflow-x: hidden; /* Evita scroll horizontal em mobile */
 }
 .nav-anim-hover {
   transition: color 0.3s;
@@ -42,5 +43,40 @@ body {
 .nav-anim-hover:hover,
 .nav-anim-hover:focus {
   color: #18aaff !important;
+}
+
+/* Melhorias para mobile */
+@media (max-width: 640px) {
+  .text-3xl {
+    line-height: 1.2;
+  }
+  
+  /* Garante que cards não quebrem o layout */
+  .flex-wrap {
+    justify-content: center;
+  }
+  
+  /* Melhora espaçamento em mobile */
+  .gap-4 {
+    gap: 1rem;
+  }
+}
+
+/* Estilo para o menu mobile overlay */
+@media (max-width: 768px) {
+  .mobile-menu {
+    animation: slideInFromTop 0.3s ease-out;
+  }
+  
+  @keyframes slideInFromTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
 

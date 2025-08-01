@@ -18,11 +18,11 @@
 /* Tema claro opcional */
 @media (prefers-color-scheme: light) {
   :root { 
-    --background: #ffffff;
-    --foreground: #000000;
-    --border: #e5e5e5;
+    --background: #0E100F;
+    --foreground: #FFFFE3;
+    --border: #323228;
     --hover: #18AAFF;
-    --bgcard: #f8f8f8;
+    --bgcard: #191917;
     --cyan: #00D3F2;
     --purple: #C27AFF;
     --pink: #FB64B6;

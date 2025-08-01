@@ -4,30 +4,29 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap');
 :root {
-  --background: #171717;
-  --foreground: #ffffff;
-  --border: rgb(50,50,40)
+  --background: #0E100F;
+  --foreground: #FFFFE3;
+  --border: #323228;
+  --hover: #18AAFF;
+  --bgcard: #191917;
+  --cyan: #00D3F2;
+  --purple: #C27AFF;
+  --pink: #FB64B6;
+  --yellow: #FCC800;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+/* Tema claro opcional */
+@media (prefers-color-scheme: light) {
   :root { 
-    --background: #0E100F;
-    --foreground: #FFFFE3;
-    --border: #323228;
+    --background: #ffffff;
+    --foreground: #000000;
+    --border: #e5e5e5;
     --hover: #18AAFF;
-    --bgcard: #191917;
+    --bgcard: #f8f8f8;
     --cyan: #00D3F2;
     --purple: #C27AFF;
     --pink: #FB64B6;
     --yellow: #FCC800;
-
   }
 }
 

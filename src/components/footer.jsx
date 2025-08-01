@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import { FaLinkedin, FaDribbble, FaGithub, FaBehance, FaDiscord, FaArrowRight, FaFacebook, FaInstagram } from "react-icons/fa";
 import { motion, useInView } from "framer-motion";

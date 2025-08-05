@@ -15,7 +15,6 @@
   --yellow: #FCC800;
 }
 
-/* Tema claro opcional */
 @media (prefers-color-scheme: light) {
   :root { 
     --background: #0E100F;
@@ -34,7 +33,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Hanken Grotesk', sans-serif;
-  overflow-x: hidden; /* Evita scroll horizontal em mobile */
+  overflow-x: hidden;
 }
 .nav-anim-hover {
   transition: color 0.3s;
@@ -44,24 +43,20 @@ body {
   color: #18aaff !important;
 }
 
-/* Melhorias para mobile */
 @media (max-width: 640px) {
   .text-3xl {
     line-height: 1.2;
   }
   
-  /* Garante que cards não quebrem o layout */
   .flex-wrap {
     justify-content: center;
   }
   
-  /* Melhora espaçamento em mobile */
   .gap-4 {
     gap: 1rem;
   }
 }
 
-/* Estilo para o menu mobile overlay */
 @media (max-width: 768px) {
   .mobile-menu {
     animation: slideInFromTop 0.3s ease-out;

@@ -6,7 +6,6 @@ import { useRef, useState } from "react";
 import "../app/globals.css";
 
 const Footer = () => {
-  // Refs para cada coluna
   const col1Ref = useRef(null);
   const col2Ref = useRef(null);
   const col3Ref = useRef(null);
@@ -17,7 +16,6 @@ const Footer = () => {
   const col3InView = useInView(col3Ref, { once: true, margin: "-100px" });
   const col4InView = useInView(col4Ref, { once: true, margin: "-100px" });
 
-  // Estado para hover dos botões
   const [hoveredBtn, setHoveredBtn] = useState(null);
 
   return (

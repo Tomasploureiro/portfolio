@@ -26,7 +26,7 @@ const Home = () => {
     const [showSplash, setShowSplash] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => setShowSplash(false), 2200); // tempo em ms
+        const timer = setTimeout(() => setShowSplash(false), 2200);
         return () => clearTimeout(timer);
     }, []);
 

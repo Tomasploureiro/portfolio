@@ -73,7 +73,7 @@ const Home = () => {
                 </div>
                 <div className="flex flex-col items-center">
                     <div className="flex flex-row items-center gap-2 sm:gap-4">
-                        <h1 className="text-3xl sm:text-5xl font-semibold text-center md:text-6xl lg:text-7xl text-[var(--purple)]">ESTUDANTE</h1>
+                        <h1 className="text-3xl sm:text-5xl font-semibold text-center md:text-6xl lg:text-7xl text-[var(--purple)] ml-20">ESTUDANTE</h1>
 
                         <h1 className="text-xs sm:text-xs md:text-sm lg:text-base text-center sm:text-left"> 
                           // Coimbra, Portugal <br /> // Remoto
@@ -84,10 +84,10 @@ const Home = () => {
                         // Desenvolvedor <br /> Full Stack
                       </h1>
 
-                      <h1 className="text-3xl sm:text-5xl font-semibold text-center md:text-6xl lg:text-7xl text-[var(--yellow)]">ENGENHARIA</h1>
+                      <h1 className="text-3xl sm:text-5xl font-semibold text-center md:text-6xl lg:text-7xl text-[var(--yellow)] mr-20">ENGENHARIA</h1>
                     </div>
                     <div className="flex flex-row items-center gap-2 sm:gap-4">
-                        <h1 className="text-3xl sm:text-5xl font-semibold text-center md:text-6xl lg:text-7xl">INFORMÁTICA</h1>
+                        <h1 className="text-3xl sm:text-5xl font-semibold text-center md:text-6xl lg:text-7xl ml-10">INFORMÁTICA</h1>
                         <Link
                           href="/contact"
                           className="relative flex items-center gap-2 p-3 sm:p-4 rounded-full border border-[var(--border)] text-sm sm:text-lg font-semibold text-[var(--foreground)] shadow-lg transition-all duration-300 hover:scale-105 hover:border-green-400 overflow-hidden group"
@@ -198,21 +198,21 @@ const Home = () => {
             <div className="flex justify-center sm:justify-end sm:mr-14">
               <Link
                 href="/about"
-                className="relative flex justify-center sm:justify-end items-center gap-2 p-3 sm:p-4 rounded-full border border-[var(--border)] text-base sm:text-lg font-semibold text-[var(--foreground)] shadow-lg transition-all duration-300 hover:scale-105 hover:border-foreground w-fit mt-4 sm:mt-15 overflow-hidden group"
+                className="relative flex justify-center sm:justify-end items-center gap-2 p-3 sm:p-4 rounded-full border border-[var(--border)] text-base sm:text-lg font-semibold text-[var(--foreground)] shadow-lg transition-all duration-300 hover:scale-105 hover:border-foreground w-fit mt-4 sm:mt-15 overflow-hidden group whitespace-nowrap"
                 style={{ boxShadow: "0 0 0 2px #222 inset" }}
               >
                 <div className="absolute inset-0 transform translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0 rounded-full" style={{ backgroundColor: '#18aaff' }}></div>
                 
                 <span className="relative z-10 flex rounded-full animate-pulse"></span>
-                <h1 className="relative z-10 transition-colors duration-300 group-hover:text-[var(--foreground)]">Sobre mim</h1>
+                <h1 className="relative z-10 transition-colors duration-300 group-hover:text-[var(--foreground)] whitespace-nowrap">Sobre mim</h1>
                 <FaArrowRight className="relative z-10 transition-colors duration-300 group-hover:text-[var(--foreground)]" />
               </Link>
             </div>
           </div>
           <div className="flex items-center justify-center sm:justify-end mt-8 sm:mt-15">
             <div className="flex-grow border border-[var(--border)] sm:mt-2 md:mt-3 "> </div>
-            <span className="absolute flex items-center justify-center p-2 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-20 md:h-20 bg-foreground">
-              <FaBolt className="text-2xl sm:text-4xl fill-background" />
+            <span className="absolute flex items-center justify-center p-2 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-20 md:h-20 bg-[var(--foreground)]">
+              <FaBolt className="text-2xl sm:text-4xl text-[var(--background)]" />
             </span>
           </div>
         </section>

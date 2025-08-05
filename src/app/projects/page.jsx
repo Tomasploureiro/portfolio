@@ -5,6 +5,7 @@ import ProjectDisplay from "@/components/ProjectDisplay";
 import { FaBriefcase } from "react-icons/fa";
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
+import Footer from "@/components/footer";
 
 const ProjectsPage = () => {
     const projectRef = useRef(null);
@@ -81,6 +82,10 @@ const ProjectsPage = () => {
                     </div>
                 </section>
             </div>
+            <Footer />
+            <section className="text-sm sm:text-base font-semibold ml-4 sm:ml-5 text-[var(--foreground)] mb-4">
+                tomasploureiro ©2025 - Privacy Policy
+            </section>
         </div>
     );
 };

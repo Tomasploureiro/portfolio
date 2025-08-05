@@ -256,8 +256,10 @@ const ContactPage = () => {
                     </div>
                 </div>
             </section>
-
             <Footer />
+            <section className="text-sm sm:text-base font-semibold ml-4 sm:ml-5 text-[var(--foreground)] mb-4">
+                tomasploureiro ©2025 - Privacy Policy
+            </section>
         </div>
     );
 };

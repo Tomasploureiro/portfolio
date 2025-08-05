@@ -10,7 +10,6 @@ import TechStackSlider from "@/components/techstackslider";
 import { useState, useEffect, useRef } from "react";
 
 const Home = () => {
-    // Refs e estados para cada experiência
     const ref1 = useRef(null);
     const ref2 = useRef(null);
     const ref3 = useRef(null);
@@ -21,17 +20,9 @@ const Home = () => {
     const inView3 = useInView(ref3, { once: true, margin: "-100px" });
     const inView4 = useInView(ref4, { once: true, margin: "-100px" });
 
-    // Refs e estados para cada Card
-    const cardRef1 = useRef(null);
-    const cardRef2 = useRef(null);
-    const cardRef3 = useRef(null);
-    const cardRef4 = useRef(null);
-
-    // Ref e estado para o container dos cards
     const cardsContainerRef = useRef(null);
     const cardsInView = useInView(cardsContainerRef, { once: true, margin: "-100px" });
 
-    // Splash animation state
     const [showSplash, setShowSplash] = useState(true);
 
     useEffect(() => {

@@ -6,7 +6,7 @@ import Cards from "@/components/cards";
 import { FaBriefcase, FaBolt, FaGithub, FaFacebook, FaInstagram, FaLinkedin, FaCode, FaServer, FaPaintBrush, FaEnvelope, FaArrowRight} from "react-icons/fa";
 import Footer from "@/components/footer"
 import {motion, useInView} from "framer-motion"
-import TechStackSlider from "@/components/TechStackSlider";
+import TechStackSlider from "@/components/techstackslider";
 import { useState, useEffect, useRef } from "react";
 
 const Home = () => {

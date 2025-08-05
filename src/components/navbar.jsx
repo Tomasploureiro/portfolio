@@ -11,7 +11,6 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    // Prevent body scroll when menu is open
     useEffect(() => {
         if (isMenuOpen) {
             document.body.style.overflow = 'hidden';
@@ -30,9 +29,9 @@ const Navbar = () => {
                 <div className="flex items-center">
                     <Link
                         href="/"
-                        className="flex items-center gap-2 border-2 border-solid border-[var(--border)] rounded-full px-4 py-2"
+                        className="flex items-center border-2 border-solid border-[var(--border)] rounded-full px-4 py-2"
                     >
-                        <span className="inline-block w-6 h-6 rounded-full bg-[var(--foreground)] mr-2"></span>
+                        <span className="inline-block w-4 h-4 rounded-full bg-[var(--foreground)] mr-2"></span>
                         <span>@tomasploureiro</span>
                     </Link>
                 </div>

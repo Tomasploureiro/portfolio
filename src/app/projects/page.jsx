@@ -1,7 +1,7 @@
 "use client"
 import "@/app/globals.css";
 import Navbar from "@/components/navbar";
-import ProjectDisplay from "@/components/ProjectDisplay";
+import ProjectDisplay from "@/components/projectcard";
 import { FaBriefcase } from "react-icons/fa";
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";

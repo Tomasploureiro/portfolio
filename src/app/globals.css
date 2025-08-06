@@ -64,7 +64,7 @@ body {
   
   @keyframes slideInFromTop {
     from {
-      transform: translateY(-100%);
+      transform: translateY(-10px);
       opacity: 0;
     }
     to {

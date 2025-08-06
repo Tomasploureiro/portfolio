@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { FaArrowRight, FaUser, FaGraduationCap, FaCode, FaLaptopCode, FaDatabase, FaPalette } from "react-icons/fa";
+import { FaArrowRight, FaUser, FaGraduationCap, FaCode, FaLaptopCode, FaDatabase, FaPalette, FaLanguage } from "react-icons/fa";
 import Footer from "@/components/footer";
 
 const AboutPage = () => {
@@ -228,16 +228,28 @@ const AboutPage = () => {
                                 </div>
                             </div>
 
-                            <div>
-                                <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
-                                    <FaPalette className="text-[var(--pink)]" />
-                                    Design & Tools
-                                </h3>
-                                <ul className="text-[var(--foreground)]/80 space-y-1">
-                                    <li>• UI/UX Design</li>
-                                    <li>• Figma</li>
-                                    <li>• Git & GitHub</li>
-                                </ul>
+                            <div className="grid grid-cols-2 gap-4">
+                                <div>
+                                    <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
+                                        <FaPalette className="text-[var(--pink)]" />
+                                        Design & Tools
+                                    </h3>
+                                    <ul className="text-[var(--foreground)]/80 space-y-1">
+                                        <li>• UI/UX Design</li>
+                                        <li>• Figma</li>
+                                        <li>• Git & GitHub</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
+                                        <FaLanguage className="text-[var(--cyan)]" />
+                                        Linguas
+                                    </h3>
+                                    <ul className="text-[var(--foreground)]/80 space-y-1">
+                                        <li>• Português - Nativo</li>
+                                        <li>• Inglês - C2</li>
+                                    </ul>
+                                </div>
                             </div>
                         </motion.div>
                     </div>

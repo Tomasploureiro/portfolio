@@ -200,7 +200,7 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="flex items-center justify-center sm:justify-end mt-8 sm:mt-15">
+          <div className="flex items-center justify-end mt-8 sm:mt-15">
             <div className="flex-grow border border-[var(--border)] sm:mt-2 md:mt-3 "> </div>
             <span className="absolute flex items-center justify-center p-2 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-20 md:h-20 bg-[var(--foreground)]">
               <FaBolt className="text-2xl sm:text-4xl text-[var(--background)]" />

@@ -11,7 +11,7 @@ export async function POST(request) {
             );
         }
 
-        const mailerSendApiKey = process.env.MAILERSEND_API_KEY || "mlsn.32f6c3ee80bb4dbd4fd9285d9b305efce0d6da3dba974757598b860f999b83fc";
+        const mailerSendApiKey = process.env.MAILERSEND_API_KEY;
 
         if (!mailerSendApiKey) {
             console.error('MAILERSEND_API_KEY não configurada');
@@ -23,7 +23,7 @@ export async function POST(request) {
 
         const emailData = {
             from: {
-                email: "noreply@test-nrw7gymvp5og2k8e.mlsender.net",
+                email: "noreply@tomasploureiro.me",
                 name: "Portfolio Contact Form"
             },
             to: [
